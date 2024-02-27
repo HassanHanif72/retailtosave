@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Store</title>
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/images/favicon.html" />
+<!-- bootstrap 5.1 -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<!-- Style css -->
+<link rel="stylesheet" href="assets/css/style.css" />
+<!-- Responsive css -->
+<link rel="stylesheet" href="assets/css/responsive.css" />
+<!-- Slick Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+</head>
+
+<body>
+    <!-- header -->
+    <!-- top bar -->
+<section class="top-bar d-xl-block d-none">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-2 col-md-3 col-sm-5 col-xs-12 col-7">
+                <div class="top-logo">
+                    <nav class="navbar-expand-lg">
+                        <!-- <button class="navbar-toggler ps-0 pb-0 pt-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <img src="assets/images/toggler-icon.png" alt="Toggle navigation"
+                                class="navbar-toggler-icon">
+                        </button> -->
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" />
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-8 col-md-6 col-sm-5 col-xs-12 col-12">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control top-search" placeholder="Search Anything"
+                            aria-label="Search Anything" aria-describedby="button-addon2" required>
+                        <button class="btn top-search-button" type="submit" id="button-addon2"><i
+                                class="fa fa-search"></i> Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-3 col-lg-2 col-md-3 col-sm-2">
+                <div class="top-right text-end">
+                    <a href="#" class="btn btn-white"><i class="fa fa-user-o"></i> Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end --><header class="header">
+    <nav class="navbar navbar-expand-xl navbar-dark stroke bg-transparent">
+        <div class="container">
+            <a class="navbar-brand d-xl-none d-block" href="index.html">
+                <img src="assets/images/logo.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between top-header" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="all-stores.html">All
+                            Stores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="coupons.html">
+                            Coupons
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="deals.html">
+                            Deals
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="blog/index.html">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+                <div class="my-2 my-lg-0 d-flex align-items-center">
+                    <div class="dropdown me-2">
+                        <button class="btn btn-category dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                            <li><a class="dropdown-item" href="#">Category 3</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="me-2"><img src="assets/images/icon-1.png" /></a>
+                    <a href="#"><img src="assets/images/icon-2.png" /></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>    <!-- End header -->
+
+    <!-- section banner -->
+    <section class="top-banner">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="left-col">
+                        <h1 class="title"><span>Single Store</span>
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius, libero ac
+                            faucibus condimentum, justo turpis fringilla .</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="right-col">
+                        <img src="assets/images/top-img-1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End section -->
+
+    <!-- stores -->
+    <section class="single-store">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="top-store">
+                        <div class="top-left">
+                            <img src="assets/images/single-img.png" />
+                        </div>
+                        <div class="top-right">
+                            <h2>Expedia Coupons and Promo Codes in June 2024</h2>
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="assets/images/check.png" />
+                                <p>Deals Verified on 11/01/2024</p>
+                            </div>
+                            <p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i> <span>3.6 / 5 ( 8 votes )</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                    <div class="store-left">
+                        <div class="sec-1">
+                            <h3>About Expedia</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+                                Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
+                                making this the first true generator on the Internet. It uses a dictionary of over 200
+                                Latin words, combined with a handful of model sentence structures.</p>
+                        </div>
+                        <div class="sec-2">
+                            <h3>Similar Stores</h3>
+                            <div class="stores-sec">
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-1.png">
+                                    <h4>11 Degrees</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-2.png">
+                                    <h4>Shopbop</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-3.png">
+                                    <h4>11 Degrees</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-4.png">
+                                    <h4>Shopbop</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="sec-3">
+                            <h3>Expedia Categories</h3>
+                            <a href="#" class="btn btn-store-category">Traveling</a>
+                            <a href="#" class="btn btn-store-category">Fashion</a>
+                            <a href="#" class="btn btn-store-category">Health</a>
+                        </div>
+                        <div class="sec-2">
+                            <h3>Popular Stores</h3>
+                            <div class="stores-sec">
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-1.png">
+                                    <h4>11 Degrees</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-2.png">
+                                    <h4>Shopbop</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-3.png">
+                                    <h4>11 Degrees</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                                <a href="single-store.html" class="stores-inner">
+                                    <img src="assets/images/s-4.png">
+                                    <h4>Shopbop</h4>
+                                    <p>20 Offers</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                    <div class="store-right">
+                        <ul class="nav nav-pills justify-content-between mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                                    aria-selected="true">All (20 Offers)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-code-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-code" type="button" role="tab" aria-controls="pills-code"
+                                    aria-selected="false">Code (9 Offers)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-deals-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-deals" type="button" role="tab" aria-controls="pills-deals"
+                                    aria-selected="false">Deals (12 Offers)</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                                aria-labelledby="pills-all-tab">
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>Free Delivery On Orders Over £25</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>Free Delivery On Orders Over £25</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-code" role="tabpanel" aria-labelledby="pills-code-tab">
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>Free Delivery On Orders Over £25</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>Free Delivery On Orders Over £25</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-deals" role="tabpanel"
+                                aria-labelledby="pills-deals-tab">
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>Free Delivery On Orders Over £25</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>Free Delivery On Orders Over £25</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                                <div class="store-body">
+                                    <div class="store-list">
+                                        <div class="store-list-left">
+                                            <img src="assets/images/ss-1.png" />
+                                        </div>
+                                        <div class="store-list-center">
+                                            <span>Traveling</span>
+                                            <h4>FREE Gift (Worth £100!) When You Spend £125 Sitewide</h4>
+                                            <p>Get Free Express International Delivery + Easy Returns at Shopbop
+                                            </p>
+                                        </div>
+                                        <div class="store-list-right">
+                                            <a href="#" class="btn btn-get-code w-100">Get Code</a>
+                                        </div>
+                                    </div>
+                                    <div class="store-bottom">
+                                        <p><i class="fa fa-user-o"></i> 15 Used</p>
+                                        <p><i class="fa fa-clock-o"></i> No Expire</p>
+                                        <p><i class="fa fa-clock-o"></i> 30 June 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end -->
+
+    <!-- subscribe now -->
+    <section class="subscribe-now">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                <div class="left-col">
+                    <img src="assets/images/subscribe-img.png" class="w-100"/>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-12 col-xs-12">
+                <div class="right-col">
+                    <h5>Subscribe Newsletter</h5>
+                    <form method="POST" action="#" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control bg-white" name="email"
+                                        pattern="[^\s@]+@[a-zA-Z]+[^0-9@]+\.[cC][oO][mM]$"
+                                        placeholder="Enter email here*" required>
+                                    <div class="invalid-feedback">Please Enter Your Email</div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-theme-pink w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>    <!-- end -->
+
+    <!-- footer -->
+    <footer class="footer bg-footer">
+    <div class="container">
+        <div class="row mt-0 pt-4 pb-4">
+            <div class="col-xl-5 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="assets/images/footer-logo.png" /></a>
+                    <p>Klasha is unified payments solution that allows consumers and there is a retailers to make and
+                        receive payments and bank account.</p>
+                    <div class="social">
+                        <p class="mb-0">
+                            <a aria-label="Facebook"
+                                href="#"><i
+                                    class="fa fa-facebook-official"></i></a>
+                            <a aria-label="Youtube"
+                                href="#"><i class="fa fa-linkedin"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-links">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="all-stores.html">All Stores</a></li>
+                        <li><a href="coupons.html">Coupons</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-links">
+                    <h6>Category</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Technology</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-links">
+                    <h6>Contact Us</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="d-flex align-items-center" href="#"><img class="me-2" src="assets/images/phone.png" /> +1 234 056 78
+                                90</a></li>
+                        <li><a class="d-flex align-items-center" href="mailto:loremipsum@example.com"><img class="me-2"
+                                    src="assets/images/mail.png" /> loremipsum@example.com</a></li>
+                        <li><a class="d-flex align-items-center" href="#"><img class="me-2" src="assets/images/location.png" /> 2231
+                                Johnstown Road IL 60106</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row align-items-center mt-0 pt-2 pb-2">
+            <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                <div class="footer-bootom-links">
+                    <p>Copyright © 2023-2024 . Retail To Save . All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="social-link text-end">
+                    <p class="mb-0">
+                        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Website JS -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Slick Carousel JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+
+
+<!-- Offcanvas Side Bar -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="all-stores.html">All
+                    Stores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="coupons.html">
+                    Coupons
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="deals.html">
+                    Deals
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="blog/index.html">
+                    Blog
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>    <!-- end -->
+
+
+</body>
+</html>
